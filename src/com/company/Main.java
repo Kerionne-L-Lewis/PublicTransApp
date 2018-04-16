@@ -6,12 +6,14 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("\nHello Public Transportation!\n");
 
-        HovLane M1 = new HovLane();
-        HovLane M2 = new HovLane();
-        HovLane M3 = new HovLane();
-        HovLane M4 = new HovLane();
+        HovLane lane = new HovLane(10);
+        System.out.println( "hov (should be 10): " + lane );
+        System.out.println( "hov has " + lane.size() + " cars." );
 
-        System.out.println("Hov Lane: " + M1 + "" + M2 + "" + M3 + "" + M4);
+        lane.add( 20 );
+        System.out.println( "hov (should be 10-20): " + lane );
+        System.out.println( "hov has " + lane.size() + " cars." );
+
 
         //Todo How many cars are in the HOV lane?
         // Todo what are the id(s) of cars with only one occupant?
