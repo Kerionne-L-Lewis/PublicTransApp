@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("\nHello Public Transportation!\n");
 
-        HovLane lane = new HovLane(10);
+      HovLane lane = new HovLane(10);
         System.out.println( "hov (should be 10): " + lane );
         System.out.println( "hov has " + lane.size() + " cars." );
 

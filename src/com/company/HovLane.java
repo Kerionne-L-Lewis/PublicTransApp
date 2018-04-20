@@ -29,12 +29,12 @@ public class HovLane {
         }
     }
 
-   
+
 
     @Override
     public String toString() {
         if(next==null)
-            return " " +head + value;
+            return " "  + value;
         else
             return value + next.toString();
     }
